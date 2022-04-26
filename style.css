@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&family=Work+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root{
+    --fonte-titulo: 'Urbanist', sans-serif;
+    --fonte-padrão: Arial, Helvetica,sans-serif;
+    --fonte-destaque:'Noto Sans', sans-serif;
+    --fonte-subtitulo:'Karla', sans-serif;
+
+    --cor1:#09AB64;
+    --cor2:#09B53A;
+    --cor3:#009E00;
+    --cor4:#45B509;
+    --cor5:#7AAB09;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fonte-padrão);
+    background-color: var(--cor1);
+}
