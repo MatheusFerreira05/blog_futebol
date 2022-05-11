@@ -6,17 +6,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
+
 :root{
     --fonte-titulo: 'Urbanist', sans-serif;
     --fonte-padrão: Arial, Helvetica,sans-serif;
     --fonte-destaque:'Noto Sans', sans-serif;
     --fonte-subtitulo:'Karla', sans-serif;
 
-    --cor1:#09AB64;
-    --cor2:#09B53A;
-    --cor3:#009E00;
-    --cor4:#45B509;
-    --cor5:#7AAB09;
+    --cor1:#DA291C;
+    --cor2:#D91507;
+    --cor3:#D9BD32;
+    --cor4:#FBE122;
+    --cor5:#1811D9;
 }
 
 *{
@@ -25,7 +26,6 @@
 }
 
 body{
-    font-family: var(--fonte-padrão);
     background-color: var(--cor4);
 }
 
@@ -94,12 +94,18 @@ main h1{
 }
 
 main h2{
-    padding-top: 30px;
-    font-family: var(--fonte-subtitulo);
-    font-weight: normal;
-    text-indent: 30px;
-    line-height: 2em;
-    text-align: center;
+    background-image: linear-gradient(to right, var(--cor2),transparent);
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    color: var(--cor3);
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+main img{
+    width: 100%;
+    margin-top:10px ;
+    margin-bottom: 10px;
 }
 
 main p{
@@ -109,28 +115,34 @@ main p{
     line-height: 2em;
 }
 
-
-main img{
-    width: 100%;
-    margin-top:10px ;
-    margin-bottom: 10px;
-}
-
-.mancity{
-    width: 45%;
-    height: 25%;
-}
-
 main a{
     text-decoration: none;
     color: var(--cor2);
 }
 
-main a:hover{
-    text-decoration: underline;
-    color: rgb(24, 179, 89);
+main a.externo::after{
+    content: "\1F517";
 }
 
+main a:hover{
+    text-decoration: underline;
+    color: rgb(179, 55, 24);
+}
+
+main strong{
+    color: var(--cor5);
+}
+
+main ul{
+    list-style: '\2714';
+    list-style-position: inside;
+}
+
+aside a{
+    margin-top: 10px;
+    display: block;
+    font-weight: 1.2em;
+}
 footer{
     background-color: var(--cor3);
     padding: 10px;
@@ -142,7 +154,7 @@ footer p{
 }
 
 footer a{
-    color: rgb(10, 93, 44);
+    color: rgb(179, 42, 24);
     text-decoration: none;
 }
 
